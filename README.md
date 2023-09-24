@@ -3,7 +3,7 @@
 #Color Scheme
 :root[data-theme="light"] {
   --text: #61236c;
-  --background: #fdf8f2;
+  --background: #fff7ed;
   --primary: #f8b85d;
   --secondary: #f2a6a6;
   --accent: #d75a47;
