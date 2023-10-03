@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Modern+Antiqua&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;background-color: #FFF7ED;
+}
+
+#txtDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#txtDiv  p{
+    font-family: 'Aclonica', cursive;
+
+    margin :auto;
+}
+
+#txtDiv .nom{
+    font-size: 100px;
+    margin-bottom: 25px;
+    text-align: center;
+
+}
+
+
+
+#txtDiv #\#prtfTxt{
+    margin-top: 60px;
+    font-size: 60px;
+}
+
+#txtDiv > img{
+    margin-top: 30px;
+}
+
+svg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.vectors{
+    position: absolute;z-index:-2;
+
+}
+#vector1{
+    top: 0;
+    left:0;
+}
+
+#vector2{
+    left: 0;
+    top:100px;
+}
+
+#vector3{
+    right: 0;
+    bottom: 0;
+}
+
+#\#burgerMenu{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
