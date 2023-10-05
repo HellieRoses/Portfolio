@@ -75,6 +75,10 @@ h2{
     left: 105px;
 }
 
+.titreVague{
+    margin-bottom: 80px;
+}
+
 #rest p,ul {
     margin: auto;
     font-family: 'Montserrat Alternates', sans-serif;
