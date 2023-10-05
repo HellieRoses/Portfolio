@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Modern+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+body a{
+    text-decoration: none;
+}
+
+#\#burgerMenu{
+    position: fixed;
+    top:10px;
+    right: 10px;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+html {
+    scrollbar-width: none;
+}
+
+body{
+    height: 100%;
+    background-color: #FFF7ED;
+    overflow-x: hidden;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#mainPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#txtMain{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1,h2, #txtMain>p {
+    font-family: 'Aclonica', cursive;
+
+}
+
+.nom {
+    font-size: 100px;
+    margin-bottom: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+h1,h2{
+    color: #61236C;
+    position: relative;
+    left: 70px;
+}
+
+h1, #\#prtfTxt{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 40px;
+    position: relative;
+    left: 105px;
+}
+
+#rest p,ul {
+    margin: auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 22px;
+}
+
+#rest p{
+    width: 1600px;
+    position: relative;
+}
+
+#rest p{
+    margin-bottom: 15px;
+}
+
+#mainPage{
+    height: 100vh;
+}
+
+#list{
+    position: relative;
+    left: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+
+}
+#list ul:first-child{
+    width: fit-content;
+    margin-right:  50px;
+}
+
+#projets svg{
+    height: 40vw;
+    width: 100vw;
+    position: relative;
+    left:140px;
+}
+
+#contacts{
+    width: 100vw;
+}
+
+
+#infosContact{
+    position: relative;
+    left:140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+#infosContact div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+#infosContact div img{
+    margin-right: 35px;
+}
+
+#infosContact p > a{
+    text-decoration: none;
+}
+
+#projets > h1{
+    margin-top: 300px ;
+}
