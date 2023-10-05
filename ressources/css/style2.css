@@ -35,6 +35,7 @@ main{
     justify-content: center;
 }
 #txtMain{
+    position: relative;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -50,9 +51,8 @@ h1,h2, #txtMain>p {
 
 .nom {
     font-size: 100px;
-    margin-bottom: 25px;
     text-align: center;
-    margin: auto;
+    margin: auto auto 25px auto;
 }
 
 h1,h2{
@@ -63,6 +63,10 @@ h1,h2{
 
 h1, #\#prtfTxt{
     font-size: 60px;
+
+}
+#\#prtfTxt{
+    text-align: center;
 }
 
 h2{
@@ -143,7 +147,7 @@ h2{
     text-decoration: none;
 }
 
-#projets > h1{
+#projets > .titreVague{
     margin-top: 300px ;
 }
 
@@ -165,8 +169,8 @@ h2{
 }
 
 #vector3{
-    bottom: -30px;
-    right: 25px;
+    bottom: -220px;
+    right: -10px;
 }
 
 svg{
@@ -177,9 +181,10 @@ svg{
     z-index: -2;
 }
 
+
 #\#ligneBas{
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 10px;
 }
 #mainPage #\#ligneBas svg{
@@ -187,5 +192,81 @@ svg{
     bottom: -30px;
     width: 1000px;
     height: 225px;
+
+}
+
+#\#ligneHaut{
+    width: 800px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#\#ligneHaut svg{
+    position: relative;
+    left:0;
+    top:0;
+}
+
+
+#\#ligneMilieu{
+    width: 1920px;
+    height: 500px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#\#ligneMilieu svg{
+    position: relative;
+    left:0;
+    top:9vh;
+}
+
+#txtMain svg{
+    width: 1100px;
+    position: absolute;
+    top:-50px;
+    left:0;
+}
+.titreVague{
+    position: relative;
+}
+
+#projets .titreVague img{
+    position: absolute;
+    top: -170px;
+    left: -60px;
+}
+
+#projets .titreVague svg{
+    position: absolute;
+    top:-15px;
+    left: 50px;
+    width: 500px;
+    height: 80px;
+}
+
+#contacts > .titreVague{margin-top: 100px;}
+#contacts .titreVague img{
+    position: absolute;
+    top: -95px;
+    left:-15px;
+}
+
+#contacts .titreVague svg{
+    position: absolute;
+    top:0;
+    left: 70px;
+    width: 500px;
+    height: 80px;
+}
+
+
+#Apropos .titreVague svg{
+    position: absolute;
+    top:0;
+    left: 70px;
+    height: 100px;
 
 }
