@@ -9,7 +9,9 @@ body a{
     top:10px;
     right: 10px;
 }
-
+p{
+    overflow-wrap: break-word;
+}
 body::-webkit-scrollbar{
     display: none;
 }
@@ -17,11 +19,16 @@ html {
     scrollbar-width: none;
 }
 
+html{
+    overflow-x: hidden;
+    min-width: 1;
+}
 
 body{
     width: 100%;
     height: 100%;
     background-color: #FFF7ED;
+    margin-right: 0;
     overflow-x: hidden;
 }
 main{
@@ -29,7 +36,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
 }
 
 #mainPage{
@@ -49,6 +56,7 @@ main{
 
 h1,h2, #txtMain>p {
     font-family: 'Aclonica', cursive;
+    width: fit-content;
 
 }
 
@@ -117,19 +125,14 @@ ul{ font-size: 22px;}
 }
 #list ul:first-child{
     width: fit-content;
-    margin-right:  50px;
+    margin-right:  10%;
 }
 
-#projets svg{
-    height: 40vw;
-    width: 100vw;
-    position: relative;
-    left:140px;
-}
+
 
 #contacts{
 
-    width: 100vw;
+    width: 100%;
 }
 
 #infosContact{
@@ -188,12 +191,11 @@ ul{ font-size: 22px;}
 
 #vector2{
     top:15vh;
-    left:2px;
 }
 
 #vector3{
     bottom: -220px;
-    right: -10px;
+    right: 0;
 }
 
 svg{
@@ -238,6 +240,7 @@ svg{
     left: 0;
     width: 100%;
 }
+
 
 #\#ligneMilieu svg{
     position: relative;
@@ -301,7 +304,7 @@ svg{
 }
 #Apropos #\#cv{
     position: absolute;
-    right:110px;
+    right:7%;
     margin-top: 20px;
 }
 
@@ -362,3 +365,111 @@ svg{
     background-color: #F3AAA5;
 }
 
+@media (max-width:1600px) {
+    #vector2{
+        display: none;
+    }
+    #projets .articles {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width:1345px) {
+    #vector6{
+        display: none;
+    }
+
+    #projets .articles{
+        flex-direction: row;
+        margin-left: 10%;
+    }
+
+    #projets .articles > div{
+        flex-direction: column;
+        margin-right: 3%;
+    }
+
+    #projets .articles > div:nth-child(even){
+        margin-left: 0;
+    }
+
+    #projets .articles > div article{
+        margin: 3% 3%;
+    }
+
+}
+
+@media(max-width:1084px){
+
+    .titreVague svg{
+        display: none;
+    }
+
+    #txtMain p{
+        margin:0;
+        width: 75%;
+    }
+
+    h1,h2, #Apropos p{
+        margin-left: 10%;
+    }
+
+   #Apropos p, #list{
+       width: 80%;
+
+   }
+    #list{
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    #list > ul{ margin-left: 5%};
+    #list ul:nth-child(even){margin-left: 5%}
+
+    #list ul:first-child{margin-right:25%}
+   #Apropos p, #list ul, #infosContact p {
+       font-size: 30px;
+   }
+}
+
+@media(max-width:415px) {
+     h1{
+         width: 500px
+     }
+}
+
+
+@media (max-height:650px) {
+
+    .nom{
+        margin: auto;
+    }
+
+}
+
+@media (max-height:580px) {
+
+    #txtMain img{
+        display: none;
+    }
+
+}
+
+
+@media (max-height:480px) {
+
+    #txtMain svg{
+        display: none;
+    }
+    #txtMain {
+        margin-top: 15%;
+    }
+
+    .nom{
+        font-size: 50px;
+    }
+
+    #\#prtfTxt{
+        font-size: 40px;
+    }
+}
