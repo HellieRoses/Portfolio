@@ -324,13 +324,27 @@ svg{
     justify-content: center;
     margin-right: 30px;
     padding: 5px;
+    z-index:-2;
+    position: relative;
 }
 
-.articles article p{
-    width: 180px;
+
+
+.articles article svg > text{
     font-size: 25px;
     text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #FFF7ED;
 }
+
+.articles article svg{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+
+}
+
 
 .articles article p:first-child{
     margin-bottom: -15px;
@@ -471,5 +485,17 @@ svg{
 
     #\#prtfTxt{
         font-size: 40px;
+    }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .articles article svg {
+        animation: spin 20s infinite linear;
+    }
+    @keyframes spin {
+        to {
+            rotate: -360deg;
+        }
     }
 }
