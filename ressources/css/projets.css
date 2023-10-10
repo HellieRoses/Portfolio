@@ -1,0 +1,27 @@
+
+img:first-child{
+    position: absolute;
+    top:-120px;
+    left:-5px;
+}
+
+
+.titreVagueProjets svg{
+    position: absolute;
+    top:0px;
+    left: 50px;
+    width: 500px;
+    height: 130px;
+}
+
+p{
+    width: 80%;
+    margin: auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#homePage{
+    position: absolute;
+    top: 10px;
+    left: 96vw;
+}

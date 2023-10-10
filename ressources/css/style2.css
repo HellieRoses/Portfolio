@@ -499,3 +499,8 @@ svg{
         }
     }
 }
+
+
+.block{
+    display: block;
+}
