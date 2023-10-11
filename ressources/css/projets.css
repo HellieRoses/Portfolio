@@ -18,10 +18,19 @@ p{
     width: 80%;
     margin: auto;
     font-family: 'Montserrat Alternates', sans-serif;
+
+    font-size: 20px;
 }
 
 #homePage{
     position: absolute;
     top: 10px;
     left: 96vw;
+}
+
+h3{
+    font-family: 'Aclonica', cursive;
+    font-size: 30px;
+    margin-left: 10%;
+    color: #61236C;
 }
