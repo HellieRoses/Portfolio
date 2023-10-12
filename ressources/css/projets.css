@@ -1,5 +1,5 @@
 
-img:first-child{
+#vector4 {
     position: absolute;
     top:-120px;
     left:-5px;
@@ -8,18 +8,21 @@ img:first-child{
 
 .titreVagueProjets svg{
     position: absolute;
-    top:0px;
+    top:0;
     left: 50px;
     width: 500px;
     height: 130px;
 }
 
-p{
+p,li{
     width: 80%;
     margin: auto;
     font-family: 'Montserrat Alternates', sans-serif;
-
     font-size: 20px;
+}
+
+p{
+    margin: 10px auto;
 }
 
 #homePage{
@@ -34,3 +37,6 @@ h3{
     margin-left: 10%;
     color: #61236C;
 }
+
+
+

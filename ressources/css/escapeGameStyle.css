@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Rye&display=swap');.couleurs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.couleurs > article{
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-left:5px;
+}
+
+#Kelly{
+    font-family: 'Kelly Slab',Arial, Helvetica, sans-serif;
+}
+
+#\#Rye{
+    font-family: 'Rye', Arial, Helvetica,serif;
+}
+

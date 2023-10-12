@@ -1,0 +1,29 @@
+.imgProjet, .imgProjetBas, .imgProjetEcran, .imgProjetEcranBas{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+}
+.imgBebou, .imgBebouEcran{
+    margin-right: 10px;
+}
+
+.imgBebouEcran{
+    width: 500px;
+    height: auto;
+}
+
+.imgBebou, #\#bebou{
+    width: 128px;
+}
+.imgProjetBas, .imgProjetEcranBas {
+    margin-top: 15px;
+}
+
+@media (max-width: 1234px) {
+   .imgProjetEcran, .imgProjetEcranBas{
+        flex-direction: column;
+    }
+    .imgBebou,.imgBebouEcran{
+        margin-top: 10px;
+    }
+}

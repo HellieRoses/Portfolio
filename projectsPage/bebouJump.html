@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../ressources/css/projets.css">
     <link rel="stylesheet" href="../ressources/css/style2.css">
+    <link rel="stylesheet" href="../ressources/css/bebouJump.css">
 
     <title>Bebou Jump</title>
 </head>
@@ -23,19 +24,75 @@
         mais aussi des vortex présents sur le parcours permettant le double saut.
         Si le joueur arrive à retrouver sa bébou il pourra alors jouer à un minijeu dans le style "Jeu du dinosaure".</p>
     <h3>Durée</h3>
-    <p>Deux semaines.</p>
+    <p>Trois semaines.</p>
     <h3>Contraintes</h3>
     <p>-Le temps</p>
     <p>-Un projet à faire obligatoirement en Python (seul langage qu'on connaissait bien à l'époque)</p>
     <h3>Contexte</h3>
     <p>Ce projet a eu lieu lors du dernier trimestre de terminale. Il devait au départ compter seulement comme note de projets mais
         à la fin du projet nous avions décidé de le présenter aux Trophées NSI.</p>
+    <h3>Récompense obetnue</h3>
+    <p>Prix du meilleur projet de Terminale d'Occitanie - <a href="https://trophees-nsi.fr/resultats">Trophées NSI</a></p>
+
     <h2>Outils et langages utilisés</h2>
     <p>Le projet a entièrement été fait en Python en utilisant des notions de classes objets.</p>
+    <h2>Déroulement du projet</h2>
+    <p>La <strong>première semaine</strong> du projet a été utilisé pour apprendre la logique de code derrière un jeu vidéo et apprendre à utiliser la bibliothèque Pygame</p>
+    <p>Durant la <strong>deuxième semaine</strong>, nous nous sommes concentrer donc sur l'implémentation du code de la base de notre projet. Je me suis alors occcupée de l'animation du personnage, les mécaniques de jeu (saut,droite/gauche) et la gravité </p>
+    <p>Lors de la <strong>dernière semaine</strong>, nous avons finalisé le jeu et rajouter le minijeu. Je me suis occupé de l'implémentation de la mort du joueur et de l'ajouts des différents écrans titres. Nous avons aussi travaillé ensemble sur la création du jeu bonus et le level design du niveau.</p>
     <h2>Ce que le projet m'a apporté</h2>
-    <p>blablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalba</p>
-    <h2>Liens et images du projet</h2>
-    <p>blablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalba</p>
-
+    <p>Ceci est mon tout premier projet de jeux vidéo. Il m'a appris comment concevoir un petit jeu vidéo en peu de temps.
+        En effet nous avions du apprendre à coder de A à Z un jeu et aussi utiliser la bibliothèque PyGame qui peut être assez contraignante sur certains aspect (hitbox).</p>
+    <h2>Amélioration du Projet Possible</h2>
+    <p>En effet lors de la création du projet, il nous avait été demandé de noter les améliorations possibles. Les voici :</p>
+    <ul>
+        <li>Ajouter des nouveaux niveaux avec différents thèmes. A chaque niveau, la lanterne
+            "sortirait" de sous-terre (et gravirait une montagne): par exemple, le niveau 1 dans une mine
+            profonde, le 2 en haut d’une mine, le 3 sur terre, etc jusqu’à arriver à la lanterne.</li>
+        <li>Créer des ennemis: Ils seraient sous forme de cristaux (nous avons déjà les
+            graphismes, et bougeraient de gauche à droite à des endroits définis mais
+            n’attaqueraient pas. Pour les combattre, nous ajouterons une pioche à la lanterne (le joueur)
+            lui permettant de leur donner un coup et de les tuer en appuyant sur une touche du clavier.
+            De ces ennemis nous pourrions aussi créer différents "boss" à chaque fin de niveau, qui eux
+            mourraient en plusieurs coups et pourraient même attaquer.</li>
+        <li>Implémenter un défilement de l’écran vers le bas (nous avons pour l’instant un
+            défilement haut, gauche et droite): il permettrait d’éviter que le joueur meurt quand il tombe
+            du plateforme mais qu’il y a d’autres plateformes en dessous que l’on ne voit pas à l’écran.</li>
+        <li>Pouvoir revenir sur l'écran-titre d'accueil après avoir fini de jouer au mini-jeu.</li>
+    </ul>
+    <h2>Liens et Images du Projet</h2>
+    <h3>Personnages et Objets du jeu</h3>
+    <div class="imgProjet">
+        <img class="imgBebou" id="#bebou" alt="bebou" src="../ressources/img/imgBebouJump/bebou.png"/>
+        <img class="imgBebou" alt="sabebou" src="../ressources/img/imgBebouJump/saBebou.png"/>
+        <img class="imgBebou" alt="pique" src="../ressources/img/imgBebouJump/pique.png"/>
+        <img class="imgBebou" alt="lave" src="../ressources/img/imgBebouJump/lava.png"/>
+    </div>
+    <div class="imgProjetBas">
+        <img class="imgBebou" alt="vortex" src="../ressources/img/imgBebouJump/vortex.png"/>
+        <img class="imgBebou" alt="decoration" src="../ressources/img/imgBebouJump/deco1.png"/>
+        <img class="imgBebou" alt="decoration" src="../ressources/img/imgBebouJump/deco2.png"/>
+    </div>
+    <h3>Images du Jeu (début et fin)</h3>
+    <div class="imgProjetEcran">
+        <img class="imgBebouEcran"  alt="DebutJeu" src="../ressources/img/imgBebouJump/imageDebut.PNG"/>
+        <img class="imgBebouEcran" alt="FinJeu" src="../ressources/img/imgBebouJump/imageFin.PNG"/>
+    </div>
+    <h3>Ecrans Titres</h3>
+    <div class="imgProjetEcran">
+        <img class="imgBebouEcran"  alt="ecran titre Accueil" src="../ressources/img/imgBebouJump/ecranTitreAccueil.PNG"/>
+        <img class="imgBebouEcran" alt="ecran titre Aides" src="../ressources/img/imgBebouJump/ecranTitreAides.PNG"/>
+    </div>
+    <div class="imgProjetEcranBas">
+        <img class="imgBebouEcran"  alt="ecran titre Mort" src="../ressources/img/imgBebouJump/ecranTitreMort.PNG"/>
+        <img class="imgBebouEcran" alt="ecran titre Fin" src="../ressources/img/imgBebouJump/ecranTitreMort.PNG"/>
+    </div>
+    <h3>Mini-Jeu</h3>
+    <div class="imgProjetEcran">
+        <img class="imgBebouEcran"  alt="ecran titre MiniJeu" src="../ressources/img/imgBebouJump/miniJeu1.PNG"/>
+        <img class="imgBebouEcran" alt="mini jeu" src="../ressources/img/imgBebouJump/miniJeu2.PNG"/>
+    </div>
+    <h3>Documentation</h3>
+    <p>Retrouvez la documentation du projet, datant de Mai 2022 <a href="../ressources/pdf/documentation.pdf">ici.</a></p>
 </body>
 </html>
