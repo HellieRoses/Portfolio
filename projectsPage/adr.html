@@ -17,14 +17,71 @@
         </svg>
     </div>
     <h2>Résumé</h2>
-    <p>Résumé, contexte, durée, contraintes etc
-        blablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalba</p>
+    <p>Cette SAE* se concentre sur le développement informatique et les mathématiques. Lors de celle-ci, nous avions dû en duo :</p>
+    <ul>
+        <li>S'imprégner des règles (et les connaitre par coeur) afin de faire toutes les mécaniques du jeu. </li>
+        <li>Créer des algorithmes basés sur la théorie des graphes permettant une optimisation du jeu.</li>
+        <li>Faire une interface graphique.</li>
+    </ul>
+    <p>Qu'est ce que les <strong>Aventuriers du Rails : Autour du monde ?</strong></p>
+    <p>Les Aventuriers du Rails : Autour du monde est un jeu de stratégie dont le but est de relier plusieurs villes entre elles via routes terrestres (trains) ou maritimes (bateaux). Attention pendant que vous remplissez vos destinations, les autres joueurs peuvent s'amuser à vous bloquer le chemin pour vous embeter. Le jeu est accesible à un grand public, adultes ou plus jeunes.</p>
+    <p>Lire les règles: <a href="https://www.provincedeliege.be/sites/default/files/media/15553/Aventuriers%20du%20rail%20autour%20du%20monde%20-%20R%C3%A8gle.pdf">ici</a></p>
+    <p>*SAE = Situation d'Apprentissage et d'Evaluation, c'est un projet qui se passe dans le Cadre du BUT (Bachelor Universitaire de Technoloqie). Les SAE sont généralement découpées en livrable (listés ci-dessus).</p>
+    <h3>Contexte</h3>
+    <p>Cette SAE a eu lieu lors du premier semestre du BUT Informatique et s'applique à deux UE "Réaliser un développement d'application" et "Optimiser des applications qui se concentrent, respectivement, sur le développement informatique et l'optimisation et les mathématiques.</p>
+    <h3>Durée</h3>
+    <p>La SAE s'est déroulée sur 3 mois, entre le mois de Mars et le debut du mois de Juin.</p>
     <h2>Outils et langages utilisés</h2>
-    <p>blablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalba</p>
+    <p>Tout le développement s'est fait en Java en utilisant la POO (Programmation Orientée Objet).</p>
+    <p>Le développement de l'interface graphique s'est fait à l'aide de la bibliothèque JavaFX.</p>
+    <p>Pour la gestion du projet, nous avons utilisé le GitLab de l'IUT.</p>
+    <h2>Déroulement du projet</h2>
+    <h3>Développer les mécaniques du jeu</h3>
+    <p>Pour cette partie, il nous était fourni une interface graphique du jeu en web et déjà une structure du code. Nous ne sommes donc pas partis de 0.</p>
+    <img alt="interface fournie" class="imgSite" src="../ressources/img/adr/plateauADR.PNG"/>
+    <p>Nous devions donc coder tout ce qui composé le jeu. Pour ma part, je me suis concentré sur :</p>
+    <ul>
+        <li>Comment un tour d'un joueur se déroulait.</li>
+        <li>La distribution des cartes dans le tour.</li>
+        <li>Le calcul du score final.</li>
+        <li>Savoir si les cartes destinations d'un joueur sont complètes ou non (cela joue dans le calcul du score final.</li>
+        <li>Les échanges de pions.</li>
+    </ul>
+    <p>Tant dit que nous avons collaboré sur :</p>
+    <ul>
+        <li>L'implémentation de la prise de routes (qu'elles soient terrestre, maritimes ou paires). Nous avions utilisé pour cette part le concept d'héritage.</li>
+        <li>La construction d'un port (lorsqu'un joueur occupe une ville).</li>
+        <li>Les tests.</li>
+        <li>Les petites fonctions et exceptions du jeu.</li>
+    </ul>
+    <p>Le plus compliqué dans ce livrable était de penser et tester toutes les exceptions des règles et les possibilités (même infimes) de comment pouvait un joueur.</p>
+    <p>Uml du livrable :</p>
+    <img class="imgSite" alt="uml livrable 1" src="../ressources/img/adr/adrUML1.PNG">
+    <h3>Développer les algorithmes de graphes appliqués au jeu.</h3>
+    <p>Cette partie se concentrait donc sur la <a href="https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_graphes">Théorie des Graphes</a> vu en cours de mathématiques.</p>
+    <p>Dans le jeu, cela permettait donc aux joueurs d'établir des stratégies plus complexes et élaborées grâce à des concepts mathématiques.</p>
+    <p>Dans ce livrable, chaque objet Route avait une Arête correspondante et les sommets du graphe correspondait aux villes du plateau.</p>
+    <p>Nous avons donc travaillé sur plusieurs algortihmes tel que savoir si deux graphes sont isomorphes, si deux sommets sont voisins, l'algorithme de Dijkstra permettant de renvoyer au joueur de savoir la dsitance minimale entre deux villes et, avec une fonction complémentaire, quel était le trajet optimisé pour arriver à une ville.</p>
+    <h3>Développer l'interface graphique du jeu</h3>
+    <p>Ce livrable de la SAE était la partie qui m'intéressait le plus du projet.</p>
+    <p>Même si le temps qui nous était donné (3 semaines) était très contraignant, nous avions fait une "maquette" nous permettant de concrétiser notre idée.</p>
+    <p>L'idée derrière cette maquette était de reproduire une sensation de table de jeux avec 2 à 4 personnes autour permettant aux joueurs d'avoir une impression de jouer dans la "vraie vie" (d'où l'utilisation d'un fond d'écran style table en bois).</p>
+    <p>Au milieu se trouve le plateau, où à chaque fois qu'un joueur prend une route des pions de sa couleur apparaissent. Sur le côté du plateau, vous trouverez les différentes pioches.</p>
+    <p>Le joueur du bas est le joueur courant et ils tournent dans le sens des aiguilles d'une montre.</p>
+    <p>Sur la vue du joueur courant, on peut y voir son nom et son score, les destinations qu'il doit compléter, les cartes, les pions et les ports qu'il possède.</p>
+    <p>Si le joueur courant veut voir des informations sur un autre joueur, il suffit qu'il passe la souris au-dessus du joueur voulu pour voir apparaitre les destinations qu'il a à compléter (afin de le bloquer)</p>
+    <img class="imgSite" id="interfaceADR" alt="notre interface" src="../ressources/img/adr/interfaceADR.png" />
     <h2>Ce que le projet m'a apporté</h2>
-    <p>blablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalba</p>
+    <p>Ce projet m'a permis de voir comment coder un jeu. Il m'a aussi permis de renforcer mes compétences en Java et en POO (utilisation de l'héritage).</p>
+    <p>Ma partie préférée était la construction de l'interface graphique, même si JavaFX n'est pas la meilleure bibliothèque pour coder cela.</p>
+    <p>C'est un projet dont je me souviendrai longtemps que ce soit par sa difficulté ou l'amusement que j'ai pu avoir à coder toutes les étapes d'un jeu que je ne connaissais pas.</p>
     <h2>Liens vers le projet</h2>
-    <p>blablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalba</p>
+    <p>Liens GitHub vers :</p>
+    <ul>
+        <li><a href="https://github.com/Boissezon-A1-Projects/AventurierduRails-Mecanique">Les Mécaniques du Jeu</a></li>
+        <li><a href="https://github.com/Boissezon-A1-Projects/AventurierDuRails-Graphe">Le code des algorithmes de graphe</a></li>
+        <li><a href="https://github.com/Boissezon-A1-Projects/AventurierduRails-Ihm">L'Interface Graphique du Jeu</a></li>
+    </ul>
 
 </body>
 </html>
