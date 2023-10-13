@@ -1,7 +1,10 @@
+
+
 .imgProjet, .imgProjetBas, .imgProjetEcran, .imgProjetEcranBas{
     display: flex;
     flex-direction: row;
     margin-left: 15%;
+    width: fit-content;
 }
 .imgBebou, .imgBebouEcran{
     margin-right: 10px;
