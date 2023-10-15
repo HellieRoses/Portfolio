@@ -5,26 +5,38 @@
     <link rel="stylesheet" href="../ressources/css/projets.css">
     <link rel="stylesheet" href="../ressources/css/style2.css">
 
-    <title>Marble Maze</title>
+    <title>Portfolio</title>
 </head>
 <body>
-    <img class="vectors" id="vector4" alt="lignes" src="../ressources/img/vectors/vectorMM.png"/>
-    <a href="../index.html#projets"><img id="homePage" alt="lignes" src="../ressources/img/homePage.png"/></a>
-    <div class="titreVagueProjets">
-        <h1>Marble Maze</h1>
-        <svg xlmns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#FFF7ED">
-            <circle cx="460" cy="100" r="25" fill="#F8B85D"  />
-        </svg>
-    </div>
-    <h2>Résumé</h2>
-    <p>Résumé, contexte, durée, contraintes etc
-        blablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalba</p>
-    <h2>Outils et langages utilisés</h2>
-    <p>blablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalba</p>
-    <h2>Ce que le projet m'a apporté</h2>
-    <p>blablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalba</p>
-    <h2>Liens vers le projet</h2>
-    <p>blablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablablablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalbablablablablablablablablablablalba</p>
+<img class="vectors" id="vector4" alt="lignes" src="../ressources/img/vectors/vectorPF.png"/>
+<a href="../index.html#projets"><img id="homePage" alt="lignes" src="../ressources/img/homePage.png"/></a>
+<div class="titreVagueProjets">
+    <h1>Portfolio</h1>
+    <svg xlmns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#FFF7ED">
+        <circle cx="315" cy="100" r="25" fill="#F8B85D"  />
+    </svg>
+</div>
+<h2>Résumé</h2>
+<p>Vous êtes actuellement sur ce projet.</p>
+<p>Il me tenait à coeur de faire un portfolio pensé, designé et codé par moi-même.</p>
+<h2>Utilisation du SVG</h2>
+<p>En effet, tous les ronds présents sur la page (à part ceux contenant les projets sur la première page) sont des circles en SVG. De plus, les textes courbés présentant le nom, la date et les langages du projet sont aussi du SVG. Pour faire cela j'ai utilisé un path sous la forme :</p>
+<p>path d="
+    M (CX - R), CY
+    a R,R 0 1,1 (R * 2),0
+    a R,R 0 1,1 -(R * 2),0
+    "
+</p>
+<p>où CX et CY correspondent à où est placé le centre du cercle sur les axes X et Y, R le rayon du cercle et j'y ai simplement assigné une balise text de svg qui suit alors ce fameux path.</p>
+<p>Vous pouvez ici voir le path en blanc :</p>
+<img class="imgSite" alt="path exemple" src="../ressources/img/pathPF.PNG">
+<h2>Outils et langages utilisés</h2>
+<p>Pour tout le développement, j'ai seulement utilisé du HTML et du CSS.</p>
+<p>Pour le design, j'ai utilisé le site Figma pour faire une maquette du site et me donner une idée de ce que pourrait rendre le site.</p>
+<img class="imgSite" alt="figma" src="../ressources/img/imgPF.PNG">
+<p>Le site Figma m'a aussi permis de tracer tous les vecteurs présents sur le site</p>
+<h2>Ce que le projet m'a apporté</h2>
+<p>J'ai pu appronfondir mes connaissances en HTML CSS et j'ai pour la première fois utilisé le langage SVG dans du HTML.</p>
 
 </body>
 </html>

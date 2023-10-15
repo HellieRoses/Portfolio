@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Modern+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
-#\#burgerMenu{
-    position: fixed;
-    top:10px;
-    right: 10px;
-}
+
 p{
     overflow-wrap: break-word;
 }
@@ -18,15 +14,15 @@ html {
 
 html{
     overflow-x: hidden;
-    min-width: 1;
 }
 
 body{
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-color: #FFF7ED;
-    margin-right: 0;
+    margin: 0;
     overflow-x: hidden;
+
 }
 main{
     display: flex;
@@ -48,6 +44,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 
 
@@ -71,6 +68,7 @@ h1,h2{
     color: #61236C;
     position: relative;
     margin-left: 3.5%;
+    z-index: 0;
 }
 
 h1, #\#prtfTxt{
@@ -85,6 +83,7 @@ h2{
     font-size: 40px;
     position: relative;
     margin-left: 7%;
+    z-index: 0;
 }
 
 .titreVague{
@@ -122,7 +121,7 @@ ul{ font-size: 22px;}
     flex-direction: row;
     align-items: center;
     width: fit-content;
-
+    z-index: 0;
 }
 #list ul:first-child{
     width: fit-content;
@@ -144,6 +143,7 @@ ul{ font-size: 22px;}
     width: 50%;
     position: relative;
     margin-left: 25%;
+    z-index: 0;
 }
 
 
@@ -501,7 +501,77 @@ svg{
     }
 }
 
-
 .block{
     display: block;
 }
+
+/*Burger menu*/
+#burger{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+#burgerMenu {
+    position: fixed;
+    top:10px;
+    right: 10px;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+/*#burgerMenu article{
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background-color: #D75A47;
+    margin: 3px;
+}*/
+
+#burgerMenu:hover + #menu{
+    display: flex;
+}
+
+#\#cross{
+    display: block;
+    width: 50px;
+    height: auto;
+
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background-color: #D75A47;
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+    z-index: 2!important;
+
+}
+
+
+
+#menu div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+}
+
+#\#menu a{
+    color: white;
+    font-size: 25px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 5px auto;
+
+}
+
+
