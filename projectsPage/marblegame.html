@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../ressources/css/projets.css">
     <link rel="stylesheet" href="../ressources/css/style2.css">
-
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="../ressources/css/MG.css">
+    <title>MarbleGame</title>
 </head>
 <body>
-<img class="vectors" id="vector4" alt="lignes" src="../ressources/img/vectors/vectorPF.png"/>
+<img class="vectors" id="vector4" alt="lignes" src="../ressources/img/vectors/vector4.png"/>
 <a href="../index.html#projets"><img id="homePage" alt="lignes" src="../ressources/img/homePage.png"/></a>
 <div class="titreVagueProjets">
-    <h1>Portfolio</h1>
+    <h1>Marble Game</h1>
     <svg xlmns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#FFF7ED">
         <circle cx="315" cy="100" r="25" fill="#F8B85D"  />
     </svg>
 </div>
 <h2>Résumé</h2>
-<p>Vous êtes actuellement sur ce projet.</p>
-<p>Il me tenait à coeur de faire un portfolio pensé, designé et codé par moi-même.</p>
-<h2>Utilisation du SVG</h2>
-<p>En effet, tous les ronds présents sur la page (à part ceux contenant les projets sur la première page) sont des circles en SVG. De plus, les textes courbés présentant le nom, la date et les langages du projet sont aussi du SVG. Pour faire cela j'ai utilisé un path sous la forme :</p>
-<p>path d="
-    M (CX - R), CY
-    a R,R 0 1,1 (R * 2),0
-    a R,R 0 1,1 -(R * 2),0
-    "
-</p>
-<p>où CX et CY correspondent à où est placé le centre du cercle sur les axes X et Y, R le rayon du cercle et j'y ai simplement assigné une balise text de svg qui suit alors ce fameux path.</p>
-<p>Vous pouvez ici voir le path en blanc :</p>
-<img class="imgSite" alt="path exemple" src="../ressources/img/pathPF.PNG">
+<p>Marble Game est un jeu en 3D que je suis en train de développer. Il est inspiré des labyrinthes de billes où l'on doit bouger le labyrinthe (et non la bille) afin qu'elle rentre dans le trou d'arrivée.</p>
+<p>Car il est en cours de développement, le jeu n'est pas encore montrable.</p>
 <h2>Outils et langages utilisés</h2>
-<p>Pour tout le développement, j'ai seulement utilisé du HTML et du CSS.</p>
-<p>Pour le design, j'ai utilisé le site Figma pour faire une maquette du site et me donner une idée de ce que pourrait rendre le site.</p>
-<img class="imgSite" alt="figma" src="../ressources/img/imgPF.PNG">
-<p>Le site Figma m'a aussi permis de tracer tous les vecteurs présents sur le site</p>
-<h2>Ce que le projet m'a apporté</h2>
-<p>J'ai pu appronfondir mes connaissances en HTML CSS et j'ai pour la première fois utilisé le langage SVG dans du HTML.</p>
+<p>Le développement du jeu se fait entièrement sur Unity en C#. Un moteur de jeu et un langage que j'apprends en autonomie.</p>
+<h2>Développement du projet</h2>
+<h3>Ce qui est déjà fait</h3>
+<ul>
+    <li>Créer une "template" de niveau</li>
+    <p>Pour cela, j'ai appris à utliser l'outil Probuilder permettant de créer des objets 3D uniques (en les creusant par exemple)</p>
+    <li>Gérer la rotation</li>
+    <p>Lorsque le joueur utilise les flèches, le niveau bouge en fonction de la fleche cliquée autour d'un point central. S'il appuie sur la fleche du haut, le niveau se penche vers l'arrière. Cela marche aussi s'il appuie simultanément sur deux flèches.</p>
+    <li>Gérer la gravité de la balle</li>
+    <li>Gérer les collisions entre la balle et le niveau</li>
+    <li>Gérer la fin d'un niveau (avec une collision)</li>
+
+</ul>
+<h3>Ce qu'il reste à faire / que j'aimerais faire</h3>
+<ul>
+    <li>Créer plus de niveaux et augmenter leur difficulté</li>
+    <li>Ajouter de nouvelles mécaniques comme :</li>
+    <ul>
+        <li>Un ressort qui fait rebondir la bille (ou la fait passer au-dessus d'un mur)</li>
+        <li>Des zones de téléportation de la bille</li>
+        <li>Des malus dissimulés sur le niveau :</li>
+        <ul>
+            <li>La bille devient plus petite et légère</li>
+            <li>La bille devient plus grande et lourde</li>
+            <li>Le niveau ne devient que des ressorts</li>
+            <li>Rendre plus rapide la rotation du niveau</li>
+            <li>...</li>
+        </ul>
+        <li>Créer les menus du jeu (début, mort, changement/choix de niveau)</li>
+        <li>Gérer la sauvegarde du niveau ou s'est arrêté le joueur en fermant le jeu</li>
+    </ul>
+</ul>
 
 </body>
 </html>

@@ -19,3 +19,8 @@
     font-family: 'Rye', Arial, Helvetica,serif;
 }
 
+@media (max-width: 1000px) {
+    #vector4, svg{
+        display: none!important;
+    }
+}

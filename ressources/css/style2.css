@@ -5,19 +5,19 @@
 p{
     overflow-wrap: break-word;
 }
-body::-webkit-scrollbar{
+/*body::-webkit-scrollbar{
     display: none;
 }
 html {
     scrollbar-width: none;
-}
+}*/
 
 html{
     overflow-x: hidden;
 }
 
 body{
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: #FFF7ED;
     margin: 0;
@@ -51,7 +51,7 @@ main{
 h1,h2, #txtMain>p {
     font-family: 'Aclonica', cursive;
     width: fit-content;
-
+    word-break: break-word;
 }
 
 .nom {
@@ -140,7 +140,7 @@ ul{ font-size: 22px;}
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: fit-content;
     position: relative;
     margin-left: 25%;
     z-index: 0;
@@ -192,6 +192,7 @@ ul{ font-size: 22px;}
 
 #vector2{
     top:15vh;
+    width: 100%;
 }
 
 #vector3{
@@ -211,18 +212,18 @@ svg{
 #\#ligneBas{
     position: absolute;
     bottom: 0;
-    right: 0px;
+    right: 0;
 }
 #mainPage #\#ligneBas svg{
     position: relative;
     bottom: -30px;
-    width: 1000px;
+    width: 100%;
     height: 225px;
 
 }
 
 #\#ligneHaut{
-    width: 800px;
+    width: 100%;
     position: absolute;
     top:0;
     left:0;
@@ -251,7 +252,7 @@ svg{
 }
 
 #txtMain svg{
-    width: 1100px;
+    width:1010px;
     position: absolute;
     top:-50px;
     left:0;
@@ -303,7 +304,7 @@ svg{
 
 
 }
-#Apropos #\#cv{
+#Apropos #cv{
     position: absolute;
     right:7%;
     margin-top: 20px;
@@ -336,6 +337,7 @@ svg{
     text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
     color: #FFF7ED;
+
 }
 
 .articles article svg{
@@ -351,12 +353,23 @@ svg{
     margin-bottom: -15px;
 }
 
+@media (max-width: 375px){
+    #infosContact div > div:first-child p{
+        width:90%;
+
+    }
+
+    .articles,#infosContact {
+        margin-left: 2.5%!important;
+    }
+
+}
 
 #projets .articles{
     display: flex;
     flex-direction: column;
     width: fit-content;
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 #projets .articles > div {
@@ -415,6 +428,133 @@ svg{
 
 }
 
+
+@media (max-width:844px) and (min-width:740px) {
+   #projets .articles{
+       margin-left: 0;
+   }
+}
+
+@media (max-width:740px){
+    .nom{
+        font-size: 70px;
+    }
+
+    #\#prtfTxt{
+        font-size: 50px;
+    }
+
+    #\#ligneHaut svg{
+        top:-100px;
+    }
+    #contacts p{
+        font-size: 22px!important;
+        word-break: break-word;
+        text-align: center;
+    }
+    .articles {
+        flex-direction: column !important;
+    }
+}
+
+@media(max-width: 740px) and (min-width: 375px){
+    .articles{
+
+        margin-left: 15%!important;
+    }
+}
+
+@media (max-width: 628px){
+    #infosContact {
+        flex-direction: column;
+    }
+
+    #infosContact div div{
+        flex-direction: column;
+        align-items: center;
+    }
+    #infosContact div div img{
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+    }
+
+
+    #infosContact div > div:first-child p{
+        width:200px;
+
+    }
+}
+
+
+@media (max-width: 515px){
+    .nom{
+        font-size: 60px;
+    }
+
+    #\#prtfTxt{
+        font-size: 40px;
+    }
+
+    h1,h2,#Apropos p{
+        margin-left: 5%!important;
+
+    }
+
+     h1{
+         font-size: 50px;
+     }
+     h2{
+         font-size: 30px;
+     }
+}
+
+@media(max-width: 520px){
+    h1, h2, #Apropos p{
+        width: 90%!important;
+
+    }
+
+    h1,h2, #Apropos p, ul{
+
+        margin-left: 2%!important;
+    }
+    #list {
+        margin-left: 0!important;
+    }
+    #rest p, ul{
+        font-size: 18px;
+    }
+
+    #mainPage{
+        justify-content: flex-start;
+    }
+
+
+
+    .block{
+        display: none!important;
+    }
+    .blockPlusPetit{
+        display: block!important;
+    }
+
+}
+
+@media (max-width: 400px){
+    .nom{
+        font-size: 45px;
+    }
+
+    #\#prtfTxt{
+        font-size: 35px;
+    }
+}
+
+
+
+
+
 @media(max-width:1084px){
 
     .titreVague svg{
@@ -442,16 +582,39 @@ svg{
     #list ul:nth-child(even){margin-left: 5%}
 
     #list ul:first-child{margin-right:25%}
-   #Apropos p, #list ul, #infosContact p {
-       font-size: 30px;
-   }
+
 }
 
-@media(max-width:415px) {
+
+@media(max-width: 875px){
+    #vector1{
+       left :-310px
+    }
+}
+
+
+@media(max-width: 580px){
+    #vector1{
+        left :-450px
+    }
+}
+@media(max-width: 428px){
+    #vector1{
+        left :-550px
+    }
+}
+@media(max-width: 342px){
+    #vector1{
+        left :-610px
+    }
+}
+/*@media(max-width:415px) {
      h1{
          width: 500px
      }
-}
+}*/
+
+
 
 
 @media (max-height:650px) {
@@ -505,14 +668,39 @@ svg{
     display: block;
 }
 
+.blockPlusPetit{
+    display: none;
+}
+
+.blockPlusPetit article{
+    width: 250px;
+    height: 250px;
+}
+
+.blockPlusPetit article img{
+    width: 140px;
+    height: 140px;
+}
+
+.blockPlusPetit  .text2{
+    font-size: 20px;
+}
+
+
+.blockPlusPetit svg{
+    top:6px!important;
+    left:5px!important;
+}
 /*Burger menu*/
-#burger{
-    width: 100%;
+nav{
+    position: fixed;
+    top :10px;
+    right:10px;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
+    z-index:2000;
 }
 
 #burgerMenu {
@@ -523,17 +711,6 @@ svg{
     flex-direction: column;*/
 }
 
-/*#burgerMenu article{
-    width: 17px;
-    height: 17px;
-    border-radius: 100%;
-    background-color: #D75A47;
-    margin: 3px;
-}*/
-
-#burgerMenu:hover + #menu{
-    display: flex;
-}
 
 #\#cross{
     display: block;
@@ -554,10 +731,12 @@ svg{
     right: 10px;
     border-radius: 10px;
     z-index: 2!important;
-
 }
 
-
+.open{
+    transform: translateY(0);
+    transition: height .5s ease-in-out;
+}
 
 #menu div{
     display: flex;
@@ -566,12 +745,12 @@ svg{
 
 }
 
-#\#menu a{
+#menu a{
     color: white;
     font-size: 25px;
     font-family: 'Montserrat Alternates', sans-serif;
     margin: 5px auto;
-
+    z-index:4000;
 }
 
 
