@@ -142,7 +142,7 @@ ul{ font-size: 22px;}
     align-items: center;
     width: fit-content;
     position: relative;
-    margin-left: 25%;
+    margin-left: 38%;
     z-index: 0;
 }
 
@@ -215,11 +215,30 @@ svg{
     right: 0;
 }
 #mainPage #\#ligneBas svg{
-    position: relative;
+    position: absolute;
+    right:0;
     bottom: -30px;
-    width: 100%;
+
     height: 225px;
 
+}
+#\#ligneBas svg:first-child{
+    display: block;
+    width: 1050px;
+}
+
+#\#ligneBas svg:nth-child(2){display: none;
+    width: 400px;}
+
+@media(max-width: 440px){
+    #\#ligneBas svg:first-child{
+        display: none!important;
+    }
+    #\#ligneBas svg:nth-child(2){
+        display: block!important;
+    }
+
+    #crlResp{display: block!important;}
 }
 
 #\#ligneHaut{
@@ -257,6 +276,10 @@ svg{
     top:-50px;
     left:0;
 }
+
+#crlResp{display: none}
+
+
 .titreVague{
     position: relative;
 }
@@ -304,7 +327,7 @@ svg{
 
 
 }
-#Apropos #cv{
+#Apropos .cv{
     position: absolute;
     right:7%;
     margin-top: 20px;
@@ -359,12 +382,31 @@ svg{
 
     }
 
-    .articles,#infosContact {
-        margin-left: 2.5%!important;
-    }
-
 }
 
+@media(max-width: 520px){
+    #infosContact{
+        margin-left: 25%;
+    }
+}
+
+@media(max-width: 328px){
+    .articles,#infosContact {
+        margin-left: 15%!important;
+    }
+}
+
+@media (max-width:268px) {
+    #vector1{
+        display: none;
+    }
+}
+
+@media (max-width:268px) {
+    #vector1{
+        display: none;
+    }
+}
 #projets .articles{
     display: flex;
     flex-direction: column;
@@ -393,10 +435,34 @@ svg{
     background-color: #F3AAA5;
 }
 
+.cv{
+    border-radius: 100%;
+    background-color: #D75A47;
+    width: 127px;
+    height: 127px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv p{
+    text-align: center;
+    margin: 0!important;
+    color: #FFF7ED;
+    font-size: 18px!important;
+}
+
+.cvlien{
+    text-decoration: none;
+}
+
 @media (max-width:1600px) {
     #vector2{
         display: none;
     }
+
+    #\#ligneMilieu svg{display: none}
+
     #projets .articles {
         margin-left: 0;
     }
@@ -447,7 +513,7 @@ svg{
     #\#ligneHaut svg{
         top:-100px;
     }
-    #contacts p{
+    #contacts div div p{
         font-size: 22px!important;
         word-break: break-word;
         text-align: center;
@@ -541,7 +607,7 @@ svg{
 
 }
 
-@media (max-width: 400px){
+@media (max-width: 440px){
     .nom{
         font-size: 45px;
     }
@@ -550,7 +616,15 @@ svg{
         font-size: 35px;
     }
 }
+@media (max-width: 330px){
+    .nom{
+        font-size: 35px;
+    }
 
+    #\#prtfTxt{
+        font-size: 25px;
+    }
+}
 
 
 

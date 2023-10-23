@@ -1,6 +1,6 @@
 
 
-.imgProjet, .imgProjetBas, .imgProjetEcran, .imgProjetEcranBas{
+.imgProjetHaut, .imgProjetBas, .imgProjetEcran, .imgProjetEcranBas{
     display: flex;
     flex-direction: row;
     margin-left: 15%;
@@ -15,17 +15,42 @@
     height: auto;
 }
 
-.imgBebou, #\#bebou{
+.imgBebou{
     width: 128px;
 }
 .imgProjetBas, .imgProjetEcranBas {
     margin-top: 15px;
 }
 
+#imgProjet{
+    display: flex;
+    flex-direction: column;
+}
 
 @media (max-width: 730px) {
     #vector4,svg{
         display: none!important;
+    }
+    .imgBebouEcran{
+        width: 90%
+    }
+
+    .imgBebou{
+        width: 60px;
+    }
+}
+
+@media(max-width: 355px){
+    #imgProjet{
+        flex-direction: row;
+    }
+
+    .imgProjetHaut{
+        flex-direction: column;
+    }
+
+    .imgProjetBas{
+        flex-direction: column;
     }
 }
 
