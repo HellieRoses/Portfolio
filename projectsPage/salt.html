@@ -41,27 +41,41 @@
         Nous avons utilisé un miro pour mettre à plat tout cela et un trello pour nous aider dans l'organisation des différents sprints.</p>
     <p>Nous avons donc démarrer par implémenter les fonctionnalités les plus importantes selon le client.
         Pour ma part, j'ai effectué les pages d'informations globales sur les stages et les alternances (pages statiques en simple HTML/CSS) et enfin j'ai participé à la maquette et au CSS global de notre plateforme. </p>
+    <div class="image">
     <img class="imgSite" alt="page d'informations sur les stages" src="../ressources/img/salt/pageInfoStage.png">
     <img class="imgSite" alt="CSS global du site" src="../ressources/img/salt/screenCSS.png">
+    </div>
     <h3>Sprint 2</h3>
     <p>Lors de ce sprint, je me suis concentrée en majorité sur l'importation de fichiers CSV, venant de PStage et de Studea, via le site. Cette importation devait modifier la base de données afin que le responsable des stages puissent savoir où en est la recherche de stage de chaque étudiant. Cette fonctionnalité le facilite grandement car les fichiers CSV à importer ont plus de 100 colonnes pour chaque étudiant, les rendant illisibles. Le responsable des stages peut donc visualiser les données dans une pages dédiées.</p>
     <p>Pour faire cela, j'ai donc utilisé un formulaire où le peut inserer plusieurs fichiers à la fois, puis une boucle vérifie le type du fichier et fait d'autres vérifications afin d'insérer les données dans une vue de la base de données. Sur cette vue, il y est implémenté un trigger de type "instead of" afin de récupérer les données et de les insérer/modifier dans les bonnes tables de la base de données.</p>
     <p>C'est alors ici que j'ai rencontré une complication. En effet, les trigger instaed of n'existe pas sur MySQL. Or c'est que nous utilisions depuis le début de la SAE. J'ai donc du migrer la base de données vers PostgreSQL (que je ne connaissais pas). Cela a entrainé d'autres complications, car je l'ai fait en milieu/fin de sprint donc pour la deuxième revue de sprint nous étions sur deux SGBD différents (mauvaise idée). </p>
-    <img class="imgSite" alt="bout de code sur l'importation des fichiers CSV" src="../ressources/img/salt/codeCSV.png">
-    <img class="imgSite" alt="Colonnes de la vue PStage" src="../ressources/img/salt/vuePSTAGE.png">
-    <img class="imgSite" alt="Trigger de la vue PStage" src="../ressources/img/salt/triggerPstage.png">
+    <div class="img1grd">
+        <img class="imgSite" alt="Colonnes de la vue PStage" src="../ressources/img/salt/vuePSTAGE.png">
+        <div>
+            <img class="imgSite" alt="bout de code sur l'importation des fichiers CSV" src="../ressources/img/salt/codeCSV.png">
+            <img class="imgSite" alt="Trigger de la vue PStage" src="../ressources/img/salt/triggerPstage.png">
+        </div>
+    </div>
     <h3>Sprint 3</h3>
     <p>La première chose qui a été faite sur ce sprint était la gestion de la base de donnée sous postgre (ajouter les oublis, vérifier que toutes les fonctionnalités faites depuis le début marche encore).
         Je me suis ensuite concentrée sur le rework de l'importation, qui n'était pas finie au second sprint, et le style de front des pages de profils.</p>
+    <img class="imgSite" alt="Colonnes de la vue PStage" src="../ressources/img/salt/profilCSSsansnotes.png">
     <p>Afin de mieux comprendre le cheminement actuel des conventions de stage au sein du département informatique, j'ai aussi effectué un diagramme d'activité.
     </p>
-    <p>Ce sprint a été peu productif de mon côté et du côté de mon équipe. En effet, cela est du à une perte de motivation générale mais aussi du fait que je suis tombée malade pendant une semaine.
+    <img class="imgSite" alt="Colonnes de la vue PStage" src="../ressources/img/salt/diagActivité.png">
+    <p>Ce sprint a été moins productif que les autres de mon côté et du côté de mon équipe. En effet, cela est du à une perte de motivation générale mais aussi du fait que je suis tombée malade pendant une semaine.
     </p>
     <h3>Sprint 4</h3>
     <p>Sur ce sprint, je me suis concentrée sur la gestion des notes de soutenance au sein de la plateforme. J'ai commencé par créer un formulaire multipage basé sur celui des professeurs, que l'on nous avait transmis. Afin de changer chaque page du formulaire j'ai utilisé un script JS.</p>
+    <img class="imgSite" alt="formulaire notes gif" src="../ressources/img/salt/formulaireNote.gif">
     <p>Ensuite, j'ai effectué une page permettant au responsable des stages mais aussi au secrétariat du département informatique d'exporter les notes des étudiants en un fichier CSV. Sur cette page, l'utilisateur a aussi la possibilité de modifier les coefficients des 5 notes qui composent la note finale de soutenance.</p>
-    <p>De plus, j'ai ajouté une sections notes au profil des étudiants permettant de les consulter lorsque le responsable des stages active la fonctionnalité (via un bouton dans son profil).
+    <img class="imgSite" alt="formulaire notes gif" src="../ressources/img/salt/exportation.png">
+    <p>De plus, j'ai ajouté une section notes au profil des étudiants permettant de les consulter lorsque le responsable des stages active la fonctionnalité (via un bouton dans son profil).
     </p>
+    <img class="imgSite" alt="formulaire notes gif" src="../ressources/img/salt/profilCSS.png">
+    <h2>Ce que le projet m'a apporté</h2>
+    <p>Ce projet m'a appris pleins de nouvelles compétences comme une nouvelle façon de travailler avec la méthode agile, approfondir le PHP appris en cours.</p>
+    <p>Ce projet a aussi renforcé mes compétences en travail d'équipe.</p>
 </body>
 <footer>
     <p>Maëlys Boissezon - </p> <p id="copyright">©</p> <p> 2024 | Tous droits réservés</p>

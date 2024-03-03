@@ -4,3 +4,20 @@
         }
 
 }
+
+.image,.img1grd{
+    display: flex;
+}
+
+.img1grd>div{
+    flex-direction: column;
+    align-items: center;
+}
+.img1grd>div .imgSite{
+    width: 45%;
+}
+
+
+.image img{
+    margin-left: 7%;
+}
