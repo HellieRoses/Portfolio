@@ -1,22 +1,3 @@
-@media (max-width:1669px) {
-        #vector4,svg{
-            display: none!important;
-        }
-
-}
-
-.img1grd{
-    display: flex;
-}
-
-.img1grd>div{
-    flex-direction: column;
-    align-items: center;
-}
-.img1grd>div .imgSite{
-    width: 45%;
-}
-
 .imgProjetEcran{
     display: flex;
     flex-direction: row;
@@ -31,12 +12,6 @@
 }
 
 @media (max-width: 1234px) {
-    .img1grd{
-        flex-direction: column;
-    }
-    .img1grd>div .imgSite{
-        width: 70%;
-    }
     .imgProjetEcran{
         flex-direction: column;
     }
@@ -46,3 +21,6 @@
     }
 
 }
+
+#gif{height: 100%;
+    width: auto;}
