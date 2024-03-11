@@ -21,7 +21,7 @@
     <ul>
         <li>Créer de A à Z un site de gestion de Stage et Alternance destiné aux professeurs, administrations et étudiants du département Informatique de l'IUT Montpellier - Sète</li>
     </ul>
-    <p>*SAE = Situation d'Apprentissage et d'Evaluation, c'est un projet qui se passe dans le Cadre du BUT (Bachelor Universitaire de Technoloqie). Les SAE sont généralement découpées en livrable (listés ci-dessus).</p>
+    <p>*SAE = Situation d'Apprentissage et d'Évaluation, c'est un projet qui se passe dans le Cadre du BUT (Bachelor Universitaire de Technologie). Les SAE sont généralement découpées en livrable (listés ci-dessus).</p>
     <h3>Contexte</h3>
     <p>Cette SAE a eu lieu lors du premier semestre du BUT Informatique et s'applique à toutes les UE car c'est le seul projet du semestre.</p>
     <h3>Durée</h3>
@@ -32,22 +32,22 @@
     <p>Le projet est hébergé sur le GitLab de l'IUT.</p>
     <h2>Déroulement du Projet</h2>
     <h3>Le rôle de Product Owner</h3>
-    <p>Dans l'utilisation de la méthode agile, un des rôles principal est celui du Product Owner. En effet, c'est celui qui fait le lien entre le client (ici un professeur de l'IUT) et l'équipe de développement (mon équipe et moi-même). Il est l'élément clé car c'est grâce à lui que l'équipe sait ce qu'elle doit coder et dans quel ordre. </p>
-    <p>Mon rôle au sein de l'équipe a surtout été de maintenir les backlogs de sprint sur l'application Miro et de créer des tests d'acceptances à chaque sprint afin que mes coéquipiers puissent vérifier que leur réalisation sont conformes aux attentes du client</p>
+    <p>Dans l'utilisation de la méthode agile, un des rôles principaux est celui du Product Owner. En effet, c'est celui qui fait le lien entre le client (ici un professeur de l'IUT) et l'équipe de développement (mon équipe et moi-même). Il est l'élément clé car c'est grâce à lui que l'équipe sait ce qu'elle doit coder et dans quel ordre. </p>
+    <p>Mon rôle au sein de l'équipe a surtout été de maintenir les backlogs de sprint sur l'application Miro et de créer des tests d'acceptances à chaque sprint afin que mes coéquipiers puissent vérifier que leur réalisation est conforme aux attentes du client</p>
     <img class="imgSite" alt="backlog de sprint" src="../ressources/img/salt/backlog1.png">
     <h3>Sprint 1</h3>
     <p>Le premier sprint s'est concentré sur l'analyse et la création des différentes taches à faire lors du projet.
         Nous avons utilisé un miro pour mettre à plat tout cela et un trello pour nous aider dans l'organisation des différents sprints.</p>
-    <p>Nous avons donc démarrer par implémenter les fonctionnalités les plus importantes selon le client.
+    <p>Nous avons donc démarré par implémenter les fonctionnalités les plus importantes selon le client.
         Pour ma part, j'ai effectué les pages d'informations globales sur les stages et les alternances (pages statiques en simple HTML/CSS) et enfin j'ai participé à la maquette et au CSS global de notre plateforme. </p>
     <div class="imgProjetEcran">
     <img class="imgSite" alt="page d'informations sur les stages" src="../ressources/img/salt/pageInfoStage.png">
     <img class="imgSite" alt="CSS global du site" src="../ressources/img/salt/screenCSS.png">
     </div>
     <h3>Sprint 2</h3>
-    <p>Lors de ce sprint, je me suis concentrée en majorité sur l'importation de fichiers CSV, venant de PStage et de Studea, via le site. Cette importation devait modifier la base de données afin que le responsable des stages puissent savoir où en est la recherche de stage de chaque étudiant. Cette fonctionnalité le facilite grandement car les fichiers CSV à importer ont plus de 100 colonnes pour chaque étudiant, les rendant illisibles. Le responsable des stages peut donc visualiser les données dans une pages dédiées.</p>
-    <p>Pour faire cela, j'ai donc utilisé un formulaire où le peut inserer plusieurs fichiers à la fois, puis une boucle vérifie le type du fichier et fait d'autres vérifications afin d'insérer les données dans une vue de la base de données. Sur cette vue, il y est implémenté un trigger de type "instead of" afin de récupérer les données et de les insérer/modifier dans les bonnes tables de la base de données.</p>
-    <p>C'est alors ici que j'ai rencontré une complication. En effet, les trigger instaed of n'existe pas sur MySQL. Or c'est que nous utilisions depuis le début de la SAE. J'ai donc du migrer la base de données vers PostgreSQL (que je ne connaissais pas). Cela a entrainé d'autres complications, car je l'ai fait en milieu/fin de sprint donc pour la deuxième revue de sprint nous étions sur deux SGBD différents (mauvaise idée). </p>
+    <p>Lors de ce sprint, je me suis concentrée en majorité sur l'importation de fichiers CSV, venant de PStage et de Studea, via le site. Cette importation devait modifier la base de données afin que le responsable des stages puisse savoir où en est la recherche de stage de chaque étudiant. Cette fonctionnalité le facilite grandement car les fichiers CSV à importer ont plus de 100 colonnes pour chaque étudiant, les rendant illisibles. Le responsable des stages peut donc visualiser les données dans une page dédiée.</p>
+    <p>Pour faire cela, j'ai donc utilisé un formulaire où le peut insérer plusieurs fichiers à la fois, puis une boucle vérifie le type du fichier et fait d'autres vérifications afin d'insérer les données dans une vue de la base de données. Sur cette vue, il y est implémenté un trigger de type "instead of" afin de récupérer les données et de les insérer/modifier dans les bonnes tables de la base de données.</p>
+    <p>C'est alors ici que j'ai rencontré une complication. En effet, les trigger instead of n'existe pas sur MySQL. Or, c'est que nous utilisions depuis le début de la SAE. J'ai donc dû migrer la base de données vers PostgreSQL (que je ne connaissais pas). Cela a entraîné d'autres complications, car je l'ai fait en milieu/fin de sprint donc pour la deuxième revue de sprint nous étions sur deux SGBD différents (mauvaise idée). </p>
     <div class="img1grd">
         <img class="imgSite" alt="Colonnes de la vue PStage" src="../ressources/img/salt/vuePSTAGE.png">
         <div>
@@ -56,8 +56,8 @@
         </div>
     </div>
     <h3>Sprint 3</h3>
-    <p>La première chose qui a été faite sur ce sprint était la gestion de la base de donnée sous postgre (ajouter les oublis, vérifier que toutes les fonctionnalités faites depuis le début marche encore).
-        Je me suis ensuite concentrée sur le rework de l'importation, qui n'était pas finie au second sprint, et le style de front des pages de profils.</p>
+    <p>La première chose qui a été faite sur ce sprint était la gestion de la base de données sous PostgreSQL (ajouter les oublis, vérifier que toutes les fonctionnalités faites depuis le début marche encore).
+        Je me suis ensuite concentrée sur le rework de l'importation, qui n'était pas finie au second sprint, et sur le style de front des pages de profils.</p>
     <img class="imgSite" alt="Colonnes de la vue PStage" src="../ressources/img/salt/profilCSSsansnotes.png">
     <p>Afin de mieux comprendre le cheminement actuel des conventions de stage au sein du département informatique, j'ai aussi effectué un diagramme d'activité.
     </p>
@@ -73,7 +73,7 @@
     </p>
     <img class="imgSite" alt="formulaire notes gif" src="../ressources/img/salt/profilCSS.png">
     <h2>Ce que le projet m'a apporté</h2>
-    <p>Ce projet m'a appris pleins de nouvelles compétences comme une nouvelle façon de travailler avec la méthode agile, approfondir le PHP appris en cours.</p>
+    <p>Ce projet m'a appris plein de nouvelles compétences comme une nouvelle façon de travailler avec la méthode agile, approfondir le PHP appris en cours.</p>
     <p>Ce projet a aussi renforcé mes compétences en travail d'équipe.</p>
 </body>
 <footer>

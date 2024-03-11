@@ -880,6 +880,11 @@ footer > p{
     transform: scale(1.15);
 }
 
+.articles a:not(:hover) img{
+    transition: transform .5s ease-in-out;
+    transform: scale(1);
+}
+
 #ensavoirplus article{
     background-color: #61236C;
     border-radius: 15px;
