@@ -863,13 +863,30 @@ footer {
     width: 100%;
     padding:5px;
 }
-footer > p{
+footer p{
     font-family: 'Aclonica', cursive;
     text-decoration: none;
     color: #FFF7ED;
     font-weight: bolder;
     margin-left: 2px;
     margin-right: 2px;
+}
+
+footer > div{
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    footer  {
+        flex-direction: column;
+    }
+    footer > p{
+        margin: 0.5px;
+    }
+    #copyright{
+        margin-right: 2px ;
+    }
+
 }
 #copyright{
     font-family: Arial, serif;

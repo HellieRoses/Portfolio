@@ -15,9 +15,9 @@
     .imgProjetEcran{
         flex-direction: column;
     }
-    .imgProjetEcran > .imgSite{
-        margin-left: 0%;
-        width: 90%;
+    .imgProjetEcran > .imgSite, #gif{
+        margin-left: -15%;
+        width: 110% !important;
     }
 
 }
