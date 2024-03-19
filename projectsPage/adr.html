@@ -30,13 +30,13 @@
     <h3>Contexte</h3>
     <p>Cette SAE a eu lieu lors du premier semestre du BUT Informatique et s'applique à deux UE "Réaliser un développement d'application" et "Optimiser des applications qui se concentrent, respectivement, sur le développement informatique et l'optimisation et les mathématiques.</p>
     <h3>Durée</h3>
-    <p>La SAE s'est déroulée sur 3 mois, entre le mois de Mars et le début du mois de Juin.</p>
+    <p>3 mois : entre le mois de Mars et le début du mois de Juin.</p>
     <h2>Outils et langages utilisés</h2>
-    <p>Tout le développement s'est fait en Java en utilisant la POO (Programmation Orientée Objet).</p>
-    <p>Le développement de l'interface graphique s'est fait à l'aide de la bibliothèque JavaFX.</p>
-    <p>Pour la gestion du projet, nous avons utilisé le GitLab de l'IUT.</p>
+    <p>Java en utilisant la POO (Programmation Orientée Objet), pour le développement.</p>
+    <p>La bibliothèque JavaFX,pour le développement de l'interface graphique.</p>
+    <p>Le GitLab de l'IUT, pour la gestion du projet.</p>
     <h2>Déroulement du projet</h2>
-    <h3>Développer les mécaniques du jeu</h3>
+    <h3 id="mecanique">Développer les mécaniques du jeu</h3>
     <p>Pour cette partie, il nous était fourni une interface graphique du jeu en web et déjà une structure du code. Nous ne sommes donc pas partis de 0.</p>
     <img alt="interface fournie" class="imgSite" src="../ressources/img/adr/plateauADR.PNG"/>
     <p>Nous devions donc coder tout ce qui composait le jeu. Pour ma part, je me suis concentré sur :</p>
@@ -57,12 +57,12 @@
     <p>Le plus compliqué dans ce livrable était de penser et de tester toutes les exceptions des règles et les possibilités (même infimes) de comment pouvait jouer un joueur.</p>
     <p>Uml du livrable :</p>
     <img class="imgSite" alt="uml livrable 1" src="../ressources/img/adr/adrUML1.PNG">
-    <h3>Développer les algorithmes de graphes appliqués au jeu.</h3>
+    <h3 id="algo">Développer les algorithmes de graphes appliqués au jeu.</h3>
     <p>Cette partie se concentrait donc sur la <a href="https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_graphes" target="_blank">Théorie des Graphes</a> vue en cours de mathématiques.</p>
     <p>Dans le jeu, cela permettait donc aux joueurs d'établir des stratégies plus complexes et élaborées grâce à des concepts mathématiques.</p>
     <p>Dans ce livrable, chaque objet Route avait une Arête correspondante et les sommets du graphe correspondaient aux villes du plateau.</p>
     <p>Nous avons donc travaillé sur plusieurs algorthimes tels que savoir si deux graphes sont isomorphes, si deux sommets sont voisins, l'algorithme de Dijkstra permettant de renvoyer au joueur de savoir la distance minimale entre deux villes et, avec une fonction complémentaire, quel était le trajet optimisé pour arriver à une ville.</p>
-    <h3>Développer l'interface graphique du jeu</h3>
+    <h3 id="interface">Développer l'interface graphique du jeu</h3>
     <p>Ce livrable de la SAE était la partie qui m'intéressait le plus du projet.</p>
     <p>Même si le temps qui nous était donné (3 semaines) était très contraignant, nous avions fait une "maquette" nous permettant de concrétiser notre idée.</p>
     <img class="imgSite" id="#maquette" alt="maquette" src="../ressources/img/adr/maquetteADR.jpg"/>
@@ -84,6 +84,54 @@
         <li><a href="https://github.com/Boissezon-A1-Projects/AventurierduRails-Ihm" target="_blank">L'Interface Graphique du Jeu</a></li>
     </ul>
 
+    <h2>Compétences Mobilisées</h2>
+    <h3>Compétence n°1</h3>
+    <div class="competences">
+        <article class="competence11">
+            <h4>Niveau 1: AC1: Implémenter des conceptions simples </h4>
+            <p class="exemple">Cf. "<a href="#mecanique">Développement des mécaniques du jeu</a>"</p>
+        </article>
+        <article class="competence11">
+            <h4> Niveau 1: AC2: Elaborer des conceptions simples </h4>
+            <p class="exemple">Cf. "<a href="#mecanique">Développement des mécaniques du jeu</a>"</p>
+        </article>
+        <article class="competence11">
+            <h4> Niveau 1: AC3: Faire des essais et évaluer leur résultats au regard des spécifications</h4>
+            <p class="exemple">Lors du développement des mécaniques mais aussi des algorithmes, nous avons du faire des tests avec JUnit</p>
+        </article>
+        <article class="competence11">
+            <h4> Niveau 1: AC4: Développer des interfaces utilisateurs </h4>
+            <p class="exemple">Cf. "<a href="#interface">Développer l'interface graphique du jeu</a>" </p>
+        </article>
+        <article class="competence12">
+            <h4> Niveau 2: AC2: Appliquer des principes d’accessibilité et d’ergonomie </h4>
+            <p class="exemple">Cf. "<a href="#interface">Développer l'interface graphique du jeu</a>" où l'on a voulu rendre l'interface la plus ergonomique mais aussi ludique possible </p>
+        </article>
+    </div>
+    <h3>Compétence n°2</h3>
+    <div class="competences">
+        <article class="competence21">
+            <h4>Niveau 1: AC1: Analyser un problème avec méthode </h4>
+            <p class="exemple">Lors de l'implémentation des fonctions sur les graphes, nous avons utilisé des structures de données qui correspondent</p>
+        </article>
+        <article class="competence21">
+            <h4>Niveau 1: AC3: Formaliser et mettre en œuvre des outils mathématiques pour l’informatique </h4>
+            <p class="exemple">Cf. "<a href="#algo">Développer les algorithmes de graphes appliqués au jeu</a>". En effet, ici nous avons littéralement appliqué toutes les méthodologies et algorthmes de la théorie des graphes</p>
+        </article>
+
+    </div>
+    <h3>Compétence n°6</h3>
+    <div class="competences">
+        <article class="competence61">
+            <h4>Niveau 1: AC2: 2 Découvrir les aptitudes requises selon les différents secteurs informatiques </h4>
+            <p class="exemple">Dans ce projet, nous avons du mobilisé plusieurs aptitudes pour se conformer à différents secteurs informatiques : le développement de mécaniques de jeux vidéo, le développement appliqué aux mathématiques et le développement d'interfaces homme-machine</p>
+        </article>
+        <article class="competence61">
+            <h4>Niveau 1: AC4: Acquérir les compétences interpersonnelles pour travailler en équipe </h4>
+            <p class="exemple">Même si ce projet n'etait que à deux, il a quand même demander des compétences interpersonnelles afin qu'il se passe bien et qu'on puisse communiquer simplement</p>
+        </article>
+
+    </div>
 </body>
 <footer>
     <p>Maëlys Boissezon - </p> <div><p id="copyright">©</p> <p> 2024 | </p></div> <p>Tous droits réservés</p>

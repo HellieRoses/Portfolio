@@ -80,3 +80,53 @@ h1{
     }
 
 }
+
+/*ARTICLES COMPETENCES*/
+.competences{
+    margin-left: 5%;
+ display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    width:100%;
+}
+
+.competences > article {
+    width: 25%;
+    height: fit-content;
+    border-radius: 15px;
+   padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.competences > article h4, .competences > article p{
+    margin: 0 0 2px;
+}
+
+.competences > article h4{
+    font-size: 20px;
+    color: black;
+}
+
+.competences .exemple{
+    width: fit-content;
+    margin-top: 4%;
+}
+
+.competence11{
+    background-color: #E8C5BB;
+}
+.competence12{
+    background-color: #D08A77;
+}
+.competence21{
+    background-color: #FFB7A6;
+}
+.competence22{
+    background-color: #FF6F4C;
+}
+.competence61{
+    background-color: #D0B3AC;
+}
+.competence62{
+    background-color: #A26859;
+}
