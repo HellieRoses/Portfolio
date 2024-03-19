@@ -78,6 +78,9 @@ h1{
     .imgSite{
         width: 70%;
     }
+    #vector4{
+        display: none;
+    }
 
 }
 
@@ -111,6 +114,9 @@ h1{
     width: fit-content;
     margin-top: 4%;
 }
+.competences a {
+    color: #61236C;
+}
 
 .competence11{
     background-color: #E8C5BB;
@@ -129,4 +135,16 @@ h1{
 }
 .competence62{
     background-color: #A26859;
+}
+
+@media (max-width :1024px) {
+    .competences{
+        flex-direction: column;
+    }
+
+    .competences article{
+        margin-left: -1%;
+        width: 90%;
+        padding: 2%;
+    }
 }

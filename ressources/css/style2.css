@@ -667,6 +667,9 @@ svg{
 
     #list ul:first-child{margin-right:25%}
 
+    p{
+        text-align: justify;
+    }
 }
 
 
@@ -902,7 +905,7 @@ footer > div{
     transform: scale(1);
 }
 
-#ensavoirplus article{
+#ensavoirplus article, #portApprenti article {
     background-color: #61236C;
     border-radius: 15px;
     width: fit-content;
@@ -910,16 +913,29 @@ footer > div{
     padding: 2%;
 }
 
-#ensavoirplus article p{
+#portApprenti article{
+    width: max-content;
+    padding: 3%;
+    margin-left: 15%!important;
+}
+
+#ensavoirplus article p, #portApprenti article p{
     margin-bottom: 0;
     color: #FFF7ED;
 }
-#ensavoirplus{
+#ensavoirplus , #portApprenti{
 
     display: block;
     margin-left: 5%;
     width: fit-content;
 }
-#ensavoirplus:hover, p>a:hover{
+#ensavoirplus:hover, #portApprenti:hover , p>a:hover{
     filter: brightness(120%);
+}
+
+@media (max-width: 800px) {
+    #portApprenti article{
+        margin-left: 0% !important;
+        width: 50%;
+    }
 }
