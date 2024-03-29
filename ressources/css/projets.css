@@ -151,6 +151,13 @@ h1{
     background-color:#5770BE ;}
 
 
+.titreCompetence{
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: normal;
+}
+
 @media (max-width :1024px) {
     .competences{
         flex-direction: column;
