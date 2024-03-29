@@ -739,15 +739,19 @@ svg{
     }
 }
 
+@keyframes spin {
+    to {
+        rotate: -360deg;
+    }
+}
 
 @media (prefers-reduced-motion: no-preference) {
     .articles article svg {
         animation: spin 20s infinite linear;
     }
-    @keyframes spin {
-        to {
-            rotate: -360deg;
-        }
+
+    .articles a:hover svg{
+        animation-play-state: paused;
     }
 }
 
