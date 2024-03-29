@@ -158,6 +158,18 @@ h1{
     font-weight: normal;
 }
 
+.listeComp{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.listeComp p{
+    width: fit-content;
+    margin: 0px 2px 0px 25px;
+}
+
 @media (max-width :1024px) {
     .competences{
         flex-direction: column;
