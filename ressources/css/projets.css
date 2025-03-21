@@ -119,36 +119,45 @@ h1{
 }
 
 .competence11{
-    background-color: #E8C5BB;
+    background-color: #e7d2d0;
 }
 .competence12{
-    background-color: #D08A77;
+    background-color: #f09191;
+}
+.competence13{
+    background-color: #c45c5c;
 }
 .competence21{
-    background-color: #FFB7A6;
+    background-color: #f3e1cf;
 }
 .competence22{
-    background-color: #FF6F4C;
+    background-color: #ee9c6b;
+}
+.competence23{
+    background-color: #ed8846;
 }
 .competence61{
-    background-color: #D0B3AC;
+    background-color: #d5d0bb;
 }
 .competence62{
-    background-color: #A26859;
+    background-color: #a79e6e;
+}
+.competence63{
+    background-color: #827948;
 }
 .competence31{
-    background-color:#FEE7A0 ;
+    background-color:#f4e8b4 ;
 }
 .competence32{
-    background-color:#FDCF41 ;}
+    background-color:#f0d660 ;}
 .competence41{
-    background-color: #C8D6A7;}
+    background-color: #e0e7d5;}
 .competence42{
-    background-color:#91AE4F ;}
+    background-color:#aad37c ;}
 .competence51{
-    background-color:#ABB7DF ;}
+    background-color:#c8d7ea ;}
 .competence52{
-    background-color:#5770BE ;}
+    background-color:#84abd8 ;}
 
 
 .titreCompetence{
@@ -180,4 +189,8 @@ h1{
         width: 90%;
         padding: 2%;
     }
+}
+
+.plusExplication{
+    color: beige!important;
 }

@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../ressources/css/projets.css">
-  <link rel="stylesheet" href="../ressources/css/style2.css">
-  <link rel="stylesheet" href="../ressources/css/controverse.css">
-  <title>Playtest Manager</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../ressources/css/projets.css">
+    <link rel="stylesheet" href="../ressources/css/style2.css">
+    <link rel="stylesheet" href="../ressources/css/controverse.css">
+    <title>Playtest Manager</title>
 </head>
 <body>
 <img class="vectors" id="vector4" alt="lignes" src="../ressources/img/vectors/vectorEG.png"/>
 <a href="../index.html#projets"><img id="homePage" alt="lignes" src="../ressources/img/homePage.png"/></a>
 <div class="titreVagueProjets">
-  <h1>Playtest Manager</h1>
-  <svg xlmns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#FFF7ED">
-    <circle cx="610" cy="95" r="25" fill="#F8B85D"  />
-  </svg>
+    <h1>Playtest Manager</h1>
+    <svg xlmns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#FFF7ED">
+        <circle cx="610" cy="95" r="25" fill="#F8B85D"/>
+    </svg>
 </div>
 <h2 style="margin-top: 75px!important;">Résumé</h2>
 <h3>Contexte</h3>
-<p>Ce projet a été effectué dans le cadre du cours de développement avancé Programmation Web du Semestre 5 du BUT Informatique et s'applique à l'UE ...</p>
+<p>Ce projet a été effectué dans le cadre du cours de développement avancé Programmation Web du Semestre 5 du BUT
+    Informatique et s'applique à l'UE Réaliser un développement d'application</p>
 <p>Nous avions dû en équipe de 3 personnes :</p>
 <ul>
-  <li>Créer une API Rest</li>
-  <li>Créer une interface d'une application web web.</li>
+    <li>Créer une API Rest</li>
+    <li>Créer une interface d'une application web web.</li>
 </ul>
 
 <p>Le thème du projet était : un gestionnaire d'organisation d'évènements.
-  Nous avons alors choisi les playtests de jeux vidéo, sujet que je connais bien grâce à mes expériences personnelles (en tant que joueuse) et à mon expérience associative.
+    Nous avons alors choisi les playtests de jeux vidéo, sujet que je connais bien grâce à mes expériences personnelles
+    (en tant que joueuse) et à mon expérience associative.
 </p>
 <h3>Durée</h3>
 <p>Le projet a été découpé en deux phases :</p>
 <ul>
-  <li>Deux semaines pour faire l'API Rest</li>
-  <li>Environ trois semaines pour faire l'interface graphique.</li>
+    <li>Deux semaines pour faire l'API Rest</li>
+    <li>Environ trois semaines pour faire l'interface graphique.</li>
 </ul>
 <h2>Outils et langages utilisés</h2>
 <p>Pour développer l'api, nous avons utilisé Symfony 5, framework du langage PHP.</p>
-<p> Pour développer l'interface, nous avons utilisé Vue.js, framework du langage Javascript et Typescript ainsi que du HTML5/CSS3.</p>
+<p> Pour développer l'interface, nous avons utilisé Vue.js, framework du langage Javascript et Typescript ainsi que du
+    HTML5/CSS3.</p>
 <p> Pour ce qui est du versionnage de code, nous avons utilisé Git via la plateforme Gitlab.</p>
 <h2>Déroulement du Projet</h2>
 <h3>Création de l'API</h3>
 <p>L'api de notre site est une API Rest créé en Symfony 5.</p>
 <p>Pour cette API, j'ai développé :</p>
 <ul>
-  <li>La Création, Suppression, Modification, autrement appelé CRUD, des Utilisateurs</li>
-  <li>La connexion des utilisateurs</li>
-  <li>La gestion de la déconnexion et du rafraîchissement de la connexion (afin d'éviter qu'il soit déconnecté au cours de sa session)</li>
-  <li>L'inscription d'un utilisateur à un playtest</li>
-  <li>La création de commandes administrateur afin d'ajouter ou de supprimer le rôle adminsitrateur à un utilisateur.</li>
+    <li>La Création, Suppression, Modification, autrement appelé CRUD, des Utilisateurs</li>
+    <li>La connexion des utilisateurs</li>
+    <li>La gestion de la déconnexion et du rafraîchissement de la connexion (afin d'éviter qu'il soit déconnecté au
+        cours de sa session)
+    </li>
+    <li>L'inscription d'un utilisateur à un playtest</li>
+    <li>La création de commandes administrateur afin d'ajouter ou de supprimer le rôle adminsitrateur à un
+        utilisateur.
+    </li>
 </ul>
 <p>Ici la difficulté principale était de faire deux types d'utilisateurs.
-  Les encadrants du projet nous avaient conseillés de faire un seul type d'utilisateur avec un attribut organisateur pour définir ceux qui organisaient ou pas.</p>
-<p>Mais nous voulions que les utilisateurs soient bien dans le thème et cela demandait qu'ils aient beaucoup d'attributs différents.
-  Alors, à la place de remplir des cases Null, nous avons choisi de faire de l'héritage via Symfony.
+    Les encadrants du projet nous avaient conseillés de faire un seul type d'utilisateur avec un attribut organisateur
+    pour définir ceux qui organisaient ou pas.</p>
+<p>Mais nous voulions que les utilisateurs soient bien dans le thème et cela demandait qu'ils aient beaucoup d'attributs
+    différents.
+    Alors, à la place de remplir des cases Null, nous avons choisi de faire de l'héritage via Symfony.
 </p>
 <p>Il y a donc une entité "mère" User qui contient les attributs utiles pour la connexion.
-  Dans cette classe se trouve, un type d'héritage Joined, un Discrimateur qui contient type d'utilisateur, une map de Discriminator qui contient les types d'utilisateur possibles et la classe correspondant.
-  Ensuite, les classes Player et Company, entités filles de User avec chacune des attributs spécifiques.
-  Dans ces classes il y a seulement besoin de dire qu'elles héritent de User mais il n'y a pas besoin de spécifier plus à Symfony.
+    Dans cette classe se trouve, un type d'héritage Joined, un Discrimateur qui contient type d'utilisateur, une map de
+    Discriminator qui contient les types d'utilisateur possibles et la classe correspondant.
+    Ensuite, les classes Player et Company, entités filles de User avec chacune des attributs spécifiques.
+    Dans ces classes il y a seulement besoin de dire qu'elles héritent de User mais il n'y a pas besoin de spécifier
+    plus à Symfony.
 </p>
 <div>
-  <img alt="Class User" class="imgSite" src="../ressources/img/webS5/user.png"/>
-  <img alt="Class Player" class="imgSite" src="../ressources/img/webS5/player.png"/>
+    <img alt="Class User" class="imgSite" src="../ressources/img/webS5/user.png"/>
+    <img alt="Class Player" class="imgSite" src="../ressources/img/webS5/player.png"/>
 </div>
 <p>
-  Ensuite, la gestion de la deconnexion et du refresh de la connexion ont été fait via uen invalidation de token et en utilisant un token de refresh qui contient les informations utiles au rafraichissement de la session.
+    Ensuite, la gestion de la deconnexion et du refresh de la connexion ont été fait via uen invalidation de token et en
+    utilisant un token de refresh qui contient les informations utiles au rafraichissement de la session.
 </p>
 <p>
-  Pour finir, les commandes administrateurs ont été faites via symfony et peuvent être appelées via la console.
+    Pour finir, les commandes administrateurs ont été faites via symfony et peuvent être appelées via la console.
 </p>
 <h3>Création de l'interface graphique</h3>
 <p>Pour cette partie, je me suis majoritairement occupée de toute l'interface du site.</p>
 <p> J'ai utilisé du CSS3 et du Javascript afin de rendre l'interface agréable et interactive.</p>
-<p>  Mais avant de la développer, j'ai utilisé le logiciel figma afin de faire une maquette du site qui convenait à toutes l'équipes</p>
+<p> Mais avant de la développer, j'ai utilisé le logiciel figma afin de faire une maquette du site qui convenait à
+    toutes l'équipes</p>
 
 
 <img alt="Extrait de la maquette" class="imgSite" src="../ressources/img/webS5/maquette_extrait.PNG"/>
@@ -80,28 +93,54 @@
 
 <p> Je me suis aussi occupée de tâches qui intéragissait avec l'api comme :</p>
 <ul>
-  <li>L'inscription et la désincription à un playtest</li>
-  <li>Modification et la création de playtests et jeux vidéo</li>
-  <li>La création, modification de profils</li>
+    <li>L'inscription et la désincription à un playtest</li>
+    <li>Modification et la création de playtests et jeux vidéo</li>
+    <li>La création, modification de profils</li>
 </ul>
-<p>  Pour ces fonctionnalités, j'ai dû utiliser des formulaires basiques mais, en utilisant des components vue js pour les formulaires qui se ressemblaient.
-  En effet, pour un formulaire de création et de modification peu de choses diffèrent, on a pu utiliser le même formulaire en changeant seulement la valeur des input si l'objet est vide ou non.
+<p> Pour ces fonctionnalités, j'ai dû utiliser des formulaires basiques mais, en utilisant des components vue js pour
+    les formulaires qui se ressemblaient.
+    En effet, pour un formulaire de création et de modification peu de choses diffèrent, on a pu utiliser le même
+    formulaire en changeant seulement la valeur des input si l'objet est vide ou non.
 </p>
 
 <img alt="Placement du component dans le form" class="imgSite" src="../ressources/img/webS5/form.png"/>
 <img alt="Formulaire de Playtest" class="imgSite" src="../ressources/img/webS5/playtestForm.png"/>
-<p>  Pour finir, j'ai aussi sécurisé l'accès aux pages du site en vérifiant l'aptitude de l'utilisateur et en redirigeant à la page d'accueil s'il ne peut pas y accéder.
+<p> Pour finir, j'ai aussi sécurisé l'accès aux pages du site en vérifiant l'aptitude de l'utilisateur et en redirigeant
+    à la page d'accueil s'il ne peut pas y accéder.
 </p>
 
 <h2>Ce que le projet m'a apporté</h2>
-<p>Ce projet m'a permis de m'améliorer dans mes compétences de développement web. En effet, ces eux projets font suites aux cours de développement web du semestre et m'ont permis de mettre en oeuvre les nouvelles compétences que je venais d'acquérir.</p>
+<p>Ce projet m'a permis de m'améliorer dans mes compétences de développement web. En effet, ces eux projets font suites
+    aux cours de développement web du semestre et m'ont permis de mettre en oeuvre les nouvelles compétences que je
+    venais d'acquérir.</p>
 <h2>Liens vers le projet</h2>
 <p>Lien du site :</p>
-<p><a href=https://webinfo.iutmontp.univ-montp2.fr/~boissezonm/playtest_manager/public/api" target="_blank">Site API</a></p>
-<p><a href="https://webinfo.iutmontp.univ-montp2.fr/~boissezonm/playtest_manager_front/dist/" target="_blank">Site Final</a></p>
+<p><a href="https://webinfo.iutmontp.univ-montp2.fr/~boissezonm/playtest_manager/public/api" target="_blank">Site
+    API</a></p>
+<p><a href="https://webinfo.iutmontp.univ-montp2.fr/~boissezonm/playtest_manager_front/dist/" target="_blank">Site
+    Final</a></p>
+
+<h2>Compétences Mobilisées</h2>
+<h3>Compétence n°1</h3>
+<div class="competences">
+    <article id="C1N3AC1" class="competence13">
+        <h4>AC1: Choisir et implémenter les architectures adaptées </h4>
+        <p class="exemple">Lors de ces projets, j’ai appris à mettre en place une API REST et des architectures adaptées
+            dans une application web. (exemple : héritage des utilisateurs)</p>
+        <p><a class="plusExplication" href="../pageCompétencesA3.html#C1AC1">Plus d'explications ici</a></p>
+    </article>
+    <article id="C1N3AC3" class="competence13">
+        <h4>AC3: Intégrer des solutions dans un environnement de production </h4>
+        <p class="exemple">Lors de ces projets, j'ai appris à mettre en ligne les sites web interconnectés</p>
+        <p> <a class="plusExplication" href="../pageCompétencesA3.html#C1AC1">Plus d'explications ici</a></p>
+    </article>
+</div>
 
 </body>
 <footer>
-  <p>Maëlys Boissezon - </p> <div><p id="copyright">©</p> <p> 2025 | </p></div> <p>Tous droits réservés</p>
+    <p>Maëlys Boissezon - </p>
+    <div><p id="copyright">©</p>
+        <p> 2025 | </p></div>
+    <p>Tous droits réservés</p>
 </footer>
 </html>
