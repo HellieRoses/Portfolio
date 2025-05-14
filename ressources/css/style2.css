@@ -72,7 +72,7 @@ h1,h2, #txtMain>p {
 
 a, p>a{ text-decoration: none;
     color: #D75A47;
-font-weight: bolder}
+    font-weight: bolder}
 
 h1,h2{
     color: #61236C;
@@ -506,9 +506,9 @@ svg{
 
 
 @media (max-width:844px) and (min-width:740px) {
-   #projets .articles{
-       margin-left: 0;
-   }
+    #projets .articles{
+        margin-left: 0;
+    }
 }
 
 @media (max-width:740px){
@@ -577,12 +577,12 @@ svg{
 
     }
 
-     h1{
-         font-size: 50px;
-     }
-     h2{
-         font-size: 30px;
-     }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
 }
 
 @media(max-width: 520px){
@@ -654,10 +654,10 @@ svg{
         margin-left: 10%;
     }
 
-   #Apropos p, #list{
-       width: 80%;
+    #Apropos p, #list{
+        width: 80%;
 
-   }
+    }
     #list{
         flex-direction: column;
         margin-left: 5%;
@@ -667,12 +667,15 @@ svg{
 
     #list ul:first-child{margin-right:25%}
 
+    p{
+        text-align: justify;
+    }
 }
 
 
 @media(max-width: 875px){
     #vector1{
-       left :-310px
+        left :-310px
     }
 }
 
@@ -736,15 +739,19 @@ svg{
     }
 }
 
+@keyframes spin {
+    to {
+        rotate: -360deg;
+    }
+}
 
 @media (prefers-reduced-motion: no-preference) {
     .articles article svg {
         animation: spin 20s infinite linear;
     }
-    @keyframes spin {
-        to {
-            rotate: -360deg;
-        }
+
+    .articles a:hover svg{
+        animation-play-state: paused;
     }
 }
 
@@ -821,11 +828,11 @@ nav{
 @keyframes my_animation {
     0%{
         display: none;
-    opacity: 0;}
+        opacity: 0;}
 
     100%{
         display: flex;
-    opacity: 1;}
+        opacity: 1;}
 }
 
 
@@ -902,7 +909,7 @@ footer > div{
     transform: scale(1);
 }
 
-#ensavoirplus article{
+#ensavoirplus article, .portApprenti article {
     background-color: #61236C;
     border-radius: 15px;
     width: fit-content;
@@ -910,16 +917,29 @@ footer > div{
     padding: 2%;
 }
 
-#ensavoirplus article p{
+.portApprenti article{
+    width: max-content;
+    padding: 3%;
+    margin-left: 15%!important;
+}
+
+#ensavoirplus article p, .portApprenti article p{
     margin-bottom: 0;
     color: #FFF7ED;
 }
-#ensavoirplus{
+#ensavoirplus , .portApprenti{
 
     display: block;
     margin-left: 5%;
     width: fit-content;
 }
-#ensavoirplus:hover, p>a:hover{
+#ensavoirplus:hover, .portApprenti:hover , p>a:hover, h4>a:hover{
     filter: brightness(120%);
+}
+
+@media (max-width: 800px) {
+    .portApprenti article{
+        margin-left: 0% !important;
+        width: 50%;
+    }
 }
